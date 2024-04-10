@@ -8,6 +8,8 @@ public class CalculatorTest {
     Calculator myCalc;
     Calculator multiply;
     Calculator subtract;
+
+    Calculator divide;
       @Test
     public void testAdd(){
         myCalc = new Calculator();
@@ -24,5 +26,11 @@ public class CalculatorTest {
     public void testSubtracting(){
           subtract = new Calculator();
           assertEquals(10, subtract.subtract(20,10));
+    }
+
+    @Test
+    public void testDividing(){
+          divide = new Calculator();
+          assertEquals(5,divide.divide(20,4));
     }
 }
