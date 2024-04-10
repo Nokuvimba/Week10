@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculatorTest {
     Calculator myCalc;
     Calculator multiply;
+    Calculator subtract;
       @Test
     public void testAdd(){
         myCalc = new Calculator();
@@ -17,5 +18,11 @@ public class CalculatorTest {
     public void testMultiple(){
           multiply = new Calculator();
           assertEquals(25,multiply.multiple(5,5));
+    }
+
+    @Test
+    public void testSubtracting(){
+          subtract = new Calculator();
+          assertEquals(10, subtract.subtract(20,10));
     }
 }
